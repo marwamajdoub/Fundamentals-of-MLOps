@@ -1,6 +1,7 @@
 # Kafka Setup on Ubuntu
 
 This guide provides step-by-step instructions for setting up a single-node Kafka cluster on an Ubuntu instance.
+Machine type ***t2.medium***
 
 ## Commands & Explanation
 
