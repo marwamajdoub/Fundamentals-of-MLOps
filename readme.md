@@ -1,1 +1,1 @@
-### Inital commit
+### MLOps foundation course code repo
