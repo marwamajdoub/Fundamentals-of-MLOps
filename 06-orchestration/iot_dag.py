@@ -53,12 +53,12 @@ with DAG(
         python_callable=generate_iot_data,
     )
 
-    aggrigate_machine_data = PythonOperator(
-        task_id='aggrigate_machine_data',
+    aggregate_machine_data = PythonOperator(
+        task_id='aggregate_machine_data',
         python_callable=aggregate_machine_data,
     )
 
     end_task = DummyOperator(task_id='end_task')
 
     # Task dependencies
-    start_task >> getting_iot_data >> aggrigate_machine_data >> end_task
+    start_task >> getting_iot_data >> aggregate_machine_data >> end_task
