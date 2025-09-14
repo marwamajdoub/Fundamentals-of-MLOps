@@ -1,6 +1,7 @@
 from confluent_kafka import Producer, Consumer, KafkaError, KafkaException
 from confluent_kafka.admin import AdminClient, NewTopic
 
+
 # Configuration for Kafka connection
 kafka_config = {
     'bootstrap.servers': 'localhost:9092',  # Replace with your Kafka broker address
